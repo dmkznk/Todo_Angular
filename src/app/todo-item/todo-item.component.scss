@@ -1,0 +1,47 @@
+.card {
+  padding: 20px;
+  border: #ccc 1px solid;
+  margin: 10px 0;
+  border-radius: 5px;
+  position: relative;
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    span.completed {
+      text-decoration: line-through;
+    }
+  }
+  small {
+    left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    color: #cccccc;
+  }
+}
+
+.btn {
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  transition: opacity 0.2s ease-in;
+  &:hover {
+    opacity: .8;
+  }
+  &:disabled {
+    background: #ccc;
+    color: #000;
+    cursor: not-allowed;
+  }
+  &.danger {
+    background: red;
+    color: #fff;
+  }
+}
